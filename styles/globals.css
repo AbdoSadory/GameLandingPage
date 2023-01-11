@@ -1,8 +1,9 @@
 :root {
   --black: #111;
-  --dark-gray: #282828;
-  --gray: gray;
-  --light-gray: #e6e6e6;
+  --light-black: #0f1923;
+  --dark-gray: rgb(43, 43, 43);
+  --gray: rgb(178, 178, 178);
+  --light-gray: #ece8e1;
   --red-gradient: linear-gradient(
     135deg,
     rgb(255, 51, 66) 0%,
@@ -11,6 +12,34 @@
   );
   --red: #c92424;
 }
+@font-face {
+  font-family: "MavenPro";
+  src: url(/assets/fonts/MavenPro-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Tungsten-Black";
+  src: url(/assets/fonts/Tungsten-Black.otf);
+}
+@font-face {
+  font-family: "Tungsten-Bold";
+  src: url(/assets/fonts/Tungsten-Bold.otf);
+}
+@font-face {
+  font-family: "Tungsten-light";
+  src: url(/assets/fonts/Tungsten-Light.otf);
+}
+@font-face {
+  font-family: "Tungsten-Medium";
+  src: url(/assets/fonts/Tungsten-Medium.otf);
+}
+@font-face {
+  font-family: "Tungsten-Semibold";
+  src: url(/assets/fonts/Tungsten-Semibold.otf);
+}
+@font-face {
+  font-family: "Tungsten-Thin";
+  src: url(/assets/fonts/Tungsten-Thin.otf);
+}
 
 html,
 body {
@@ -18,16 +47,15 @@ body {
   margin: 0;
   font-family: arial;
 }
-
+* {
+  box-sizing: border-box;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
 a:hover {
   color: unset;
-}
-* {
-  box-sizing: border-box;
 }
 
 .black-background {
@@ -39,12 +67,127 @@ a:hover {
 .red-gradient-background {
   background: var(--red-gradient);
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.main_container {
+  width: 80%;
+  margin: auto;
+  border-left: 1px solid rgba(236, 232, 225, 0.4);
+  border-right: 1px solid rgba(236, 232, 225, 0.4);
+}
+
+.btn_border {
+  max-width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.btn_border::before {
+  position: absolute;
+  content: "";
+  height: 50%;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  border: 1px solid var(--light-gray);
+  border-bottom: 0px;
+  opacity: 0.5;
+}
+
+.btn_border::after {
+  position: absolute;
+  content: "";
+  height: 50%;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 1px solid var(--light-gray);
+  border-top: 0px;
+  opacity: 0.5;
+}
+
+.primary_btn {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 18px 110px;
+  color: var(--light-gray);
+  background: var(--red);
+  position: relative;
+  transition: 0.4s all ease-in-out;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.primary_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -5px;
+  right: 105%;
+  width: 130%;
+  background-color: var(--black);
+  transform: skew(-37deg);
+  transition: 0.4s all ease-in-out;
+  z-index: -1;
+}
+.primary_btn:hover::before {
+  right: -15%;
+}
+.primary_btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background-color: var(--black);
+  transition: 0.4s all ease-in-out;
+}
+.primary_btn:hover::after {
+  background-color: var(--light-gray);
+}
+.primary_btn:hover {
+  color: var(--light-gray);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-gray);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light-gray);
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+  .main_container {
+    width: 90%;
   }
-  body {
-    color: white;
-    background: black;
+}
+@media (max-width: 767px) {
+  .btn_border::before {
+    left: -6px;
+    right: -6px;
+    top: -6px;
   }
+  .btn_border::after {
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+  }
+}
+
+@media (max-width: 575px) {
+}
+@media (min-width: 375px) {
 }

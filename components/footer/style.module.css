@@ -1,3 +1,103 @@
-.footer__socialMedia {
+.footer_top {
+  width: 100%;
   background-color: var(--dark-gray);
+  padding: 25px;
+  text-align: center;
+}
+.footer_top_anchor {
+  color: var(--light-gray);
+  font-size: 13px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+  font-weight: 600;
+}
+.footer_top_anchor:hover {
+  color: var(--light-gray);
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.footer_bottom {
+  background-color: var(--black);
+  padding: 25px 0px;
+}
+.footer_bottom_social_container,
+.footer_bottom_logos_container {
+  text-align: center;
+}
+.footer_bottom_social_container_anchor {
+  display: inline-block;
+  background-color: var(--dark-gray);
+  border-radius: 5px;
+  padding: 4px;
+  text-align: center;
+}
+.footer_bottom_social_container_anchor svg {
+  fill: var(--light-gray);
+  vertical-align: sub;
+}
+.footer_bottom_logos_container {
+  padding: 25px;
+}
+.footer_bottom_logos_container_anchor {
+  width: 135px;
+  display: block;
+  margin: auto;
+  transition: 0.3s all ease-in-out;
+}
+.footer_bottom_logos_container_anchor .logo_img {
+  width: 10;
+  width: 100%;
+}
+.footer_bottom_rights_container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.footer_bottom_rights_container p {
+  font-size: 13px;
+  color: var(--gray);
+}
+.footer_bottom_terms_container {
+  text-align: center;
+}
+.footer_bottom_terms_container_anchor {
+  color: var(--light-gray);
+  font-size: 13px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+  font-weight: 600;
+}
+.footer_bottom_terms_container .footer_bottom_terms_container_anchor:hover {
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
+}
+.footer_bottom_terms_container img {
+  margin-top: 30px;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .footer_top {
+    padding: 10px;
+  }
+  .footer_top_anchor {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+  .footer_bottom_rights_container {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 375px) {
+  .footer_bottom_terms_container_anchor {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
 }

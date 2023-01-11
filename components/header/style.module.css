@@ -1,29 +1,57 @@
-.header_nav {
-  background-color: var(--black);
-  box-shadow: 0px 5px 7px 0px var(--dark-gray);
-  -webkit-box-shadow: 0px 5px 7px 0px var(--dark-gray);
-  -moz-box-shadow: 0px 5px 7px 0px var(--dark-gray);
-  z-index: 1;
+.header_background {
+  background-color: var(--black) !important;
 }
-.logo {
-  width: 60%;
+.header_brand_logo {
+  width: 14%;
 }
-.navbar_toggler {
-  background-color: var(--dark-gray);
+.header_brand_logo_img {
+  width: 100px;
+}
+.nav_icon {
+  color: var(--light-gray);
+}
+.nav_item {
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+.nav_item:hover {
+  background-color: var(--light-gray);
+}
+.nav_link {
+  color: var(--light-gray);
+  text-transform: capitalize;
+  font-family: "Tungsten-Semibold";
+  letter-spacing: 2px;
+  font-size: 20px;
+  transition: 0.3s all ease-in-out;
+}
+.nav_link:hover {
+  color: var(--red);
 }
 
-@media (min-width: 992px) {
-  .nav_link_min_992px {
-    margin-right: 30px;
+@media (max-width: 1200px) {
+  .header_brand_logo_img {
+    width: 80px;
   }
-  .playNow_btn_width_min_992px {
-    width: unset !important;
-    margin-top: unset !important;
-  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 375px) {
 }
 
-@media (min-width: 320px) {
-  .logo {
-    width: 80%;
-  }
+/*
+@media (max-width: 1200px) {
 }
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 375px) {
+} 
+*/
