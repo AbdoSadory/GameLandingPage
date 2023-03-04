@@ -7,7 +7,7 @@ const Hero = () => {
       <h2 className="d-none">hero section</h2>
       <div className={`${styles.hero_img_container}`}>
         <video className={`${styles.hero_section_img}`} autoPlay loop muted>
-          <source src="assets/videos/hero-section-video.mp4" />
+          <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt778f65cedfee54fd/63bcad5b08dfb21202a7794d/VAL_Ep6_Homepage-CG-Video_V5.mp4" />
         </video>
       </div>
       <div
