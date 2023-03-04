@@ -1,6 +1,5 @@
-import Link from "next/link";
 import React from "react";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 const Header = () => {
   return (
@@ -9,9 +8,17 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid py-0 px-4">
           <a
-            className={`navbar-brand ${styles.header_brand_logo} d-inline-block text-center hide-title`}
+            className={`navbar-brand ${styles.header_brand_logo} d-inline-block text-center`}
             title="brand"
             href="#"
+            onMouseOver={(e) => {
+              e.stopPropagation();
+              e.target.setAttribute("title", "");
+            }}
+            onFocus={(e) => {
+              e.stopPropagation();
+              e.target.setAttribute("title", "");
+            }}
           >
             <img
               className={`${styles.header_brand_logo_img}`}
@@ -34,55 +41,103 @@ const Header = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
               <li className={`nav-item ${styles.nav_item}`}>
                 <a
-                  className={`nav-link hide-title ${styles.nav_link}`}
+                  className={`nav-link ${styles.nav_link}`}
                   title="news"
                   aria-current="page"
                   href="#news_section"
+                  onMouseOver={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
+                  onFocus={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
                 >
                   latest news
                 </a>
               </li>
               <li className={`nav-item ${styles.nav_item}`}>
                 <a
-                  className={`nav-link hide-title ${styles.nav_link}`}
+                  className={`nav-link ${styles.nav_link}`}
                   title="dimension"
                   href="#dimension_section"
+                  onMouseOver={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
+                  onFocus={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
                 >
                   dimension
                 </a>
               </li>
               <li className={`nav-item ${styles.nav_item}`}>
                 <a
-                  className={`nav-link hide-title ${styles.nav_link}`}
+                  className={`nav-link ${styles.nav_link}`}
                   title="we are"
                   href="#weAre_section"
+                  onMouseOver={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
+                  onFocus={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
                 >
                   we are
                 </a>
               </li>
               <li className={`nav-item ${styles.nav_item}`}>
                 <a
-                  className={`nav-link hide-title ${styles.nav_link}`}
+                  className={`nav-link ${styles.nav_link}`}
                   title="agents"
                   href="#agents_section"
+                  onMouseOver={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
+                  onFocus={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
                 >
                   agents
                 </a>
               </li>
               <li className={`nav-item ${styles.nav_item}`}>
                 <a
-                  className={`nav-link hide-title ${styles.nav_link}`}
+                  className={`nav-link ${styles.nav_link}`}
                   title="maps"
                   href="#maps_section"
+                  onMouseOver={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
+                  onFocus={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
                 >
                   maps
                 </a>
               </li>
               <li className={`nav-item ${styles.nav_item}`}>
                 <a
-                  className={`nav-link hide-title ${styles.nav_link}`}
+                  className={`nav-link ${styles.nav_link}`}
                   title="download"
                   href="#footer_bottom"
+                  onMouseOver={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
+                  onFocus={(e) => {
+                    e.stopPropagation();
+                    e.target.setAttribute("title", "");
+                  }}
                 >
                   download
                 </a>

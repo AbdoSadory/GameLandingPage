@@ -1,0 +1,141 @@
+.dimension_section {
+  background-image: url(../../public/assets/images/VALORANT_2022_E5-3_PlayVALORANT_Homepage_3440x1020_MB01_Opt.jpg);
+  background-position: 48% 0px;
+  background-size: cover;
+}
+.dimension_section .main_container {
+  position: relative;
+  height: 55vw;
+  padding: 145px 0px;
+  border-right-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-left: 1px solid var(--black);
+}
+.line {
+  position: absolute;
+  bottom: 30px;
+  left: 62%;
+  width: 110px;
+  height: 3px;
+  background-color: var(--red);
+  z-index: 2;
+}
+.dimension_section .main_container::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red);
+}
+.dimension_section .main_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red);
+}
+.dimension_section_content_container {
+  margin-left: 25px;
+}
+.dimension_section_content_para {
+  margin: 0 !important;
+  color: var(--light-gray);
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: "Tungsten-Semibold";
+}
+.dimension_section_content_header {
+  margin: 30px 0px 50px;
+  color: var(--light-gray);
+  font-size: 150px;
+  letter-spacing: -0.3px;
+  font-weight: bolder;
+  font-family: "Tungsten-Bold";
+}
+.dimension_section_content_dimension_container .btn_border {
+  margin: unset;
+}
+ .dimension_section_primary_btn {
+  padding: 18px 95px;
+}
+ .dimension_section_primary_btn:hover {
+  color: white;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+  .dimension_section {
+    background-position: 47% 16%;
+    background-size: cover;
+  }
+  .dimension_section .main_container {
+    padding: unset;
+    align-items: center;
+  }
+  .dimension_section_content_para {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  .dimension_section_content_header {
+    margin: 20px 0px 25px;
+    font-size: 100px;
+  }
+
+   .dimension_section_primary_btn {
+    padding: 10px 70px;
+  }
+}
+@media (max-width: 767px) {
+  .dimension_section_content_para {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .dimension_section_content_header {
+    font-size: 80px;
+    margin: 0px 0px 15px;
+  }
+   .dimension_section_primary_btn {
+    padding: 4px 40px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .dimension_section .main_container::before {
+    bottom: 12px;
+  }
+  .dimension_section .line {
+    bottom: 17px;
+    left: 42%;
+  }
+  .dimension_section_content_container {
+    margin-left: 12px;
+  }
+  .dimension_section_content_para {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .dimension_section_content_header {
+    font-size: 50px;
+    margin: 0px 0px 15px;
+  }
+   .dimension_section_primary_btn {
+    padding: 1px 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 375px) {
+  .dimension_section {
+    background-position: 50% 16%;
+  }
+  .dimension_section .main_container {
+    padding: 145px 0px !important;
+  }
+}
+
+

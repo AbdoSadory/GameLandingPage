@@ -13,23 +13,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Valorant games for fantasy and action games, Rise your adrenaline, keep online to our maps, agents and news"
-        />
-        <meta
-          name="keywords"
-          content="Games,fantasy,action,computers,phones,laptops"
-        />
-        <meta name="author" content="ValorantGames" />
         <title>Valorant Games</title>
-        <link
-          rel="canonical"
-          href="https://abdosadory.github.io/gameWebsiteVanilla/"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
     </>

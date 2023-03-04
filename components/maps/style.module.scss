@@ -1,0 +1,205 @@
+.maps_section {
+  position: relative;
+  background-image: url(../../public/assets/images/bgofagents2.png);
+  background-color: var(--light-gray);
+  background-repeat: repeat-y;
+  background-position: 3% 57%;
+  z-index: 1;
+}
+
+.maps_section_bg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  color: #dbd8d2;
+  text-shadow: 0 0 3px #000;
+  background-color: #dbd8d2;
+  font-size: 429px;
+  text-align: center;
+  font-weight: bolder;
+  opacity: 0.2;
+  line-height: 235px;
+}
+.maps_section_bg_2 {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  overflow: hidden;
+  text-align: end;
+  z-index: 2;
+}
+
+.maps_section_bg_2_bottom {
+  display: none;
+  width: 100%;
+}
+.maps_section_bg_2_image_bottom {
+  width: 100%;
+}
+.maps_section_bg_3 {
+  width: fit-content;
+  position: absolute;
+  top: -28px;
+  left: 62%;
+}
+.maps_section .main_container {
+  position: relative;
+  padding: 112px 0px;
+  border-left-color: var(--gray);
+  border-right-color: transparent;
+  z-index: 10;
+}
+.maps_section_left_content {
+  position: relative;
+  z-index: 3;
+  width: 40%;
+  margin-left: 10px;
+  border-top: 1px solid var(--light-black);
+  padding-top: 55px;
+}
+.maps_section_header {
+  font-family: "Tungsten-Bold";
+  font-size: 135px;
+  line-height: 100px;
+  color: var(--black);
+}
+.maps_section_title {
+  color: var(--light-black);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 35px 0;
+}
+.maps_section_para {
+  margin-bottom: 50px;
+  font-weight: 600;
+  color: var(--light-black);
+}
+.maps_section_content_maps_container .maps_section_btn_border {
+  margin: unset;
+  margin-right: auto;
+}
+.maps_section_content_maps_container .maps_section_primary_btn {
+  padding: 15px 75px;
+}
+@media (max-width: 1200px) {
+  .maps_section .main_container {
+    border-right: 0px solid transparent;
+    background: linear-gradient(45deg, var(--light-gray) 17%, transparent 55%);
+  }
+  .maps_section_bg_2 {
+    top: -30px;
+    width: 100%;
+  }
+  .maps_section_bg_3 {
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 48%;
+  }
+  .maps_section_title {
+    color: var(--light-black);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 991px) {
+  .maps_section .main_container {
+    background: linear-gradient(45deg, var(--light-gray) 17%, transparent 45%);
+  }
+  .maps_section_bg_3 {
+    left: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .maps_section_bg_3 {
+    left: 0%;
+  }
+  .maps_section_left_content {
+    width: 60%;
+  }
+  .maps_section_left_content {
+    padding-top: 20px;
+  }
+  .maps_section_header {
+    font-size: 90px;
+    line-height: 65px;
+  }
+  .maps_section_title {
+    margin: 15px 0;
+  }
+  .maps_section_para {
+    margin-bottom: 25px;
+  }
+  .maps_section_bg_2_image {
+    width: 149%;
+  }
+}
+@media (max-width: 575px) {
+  .maps_section .main_container {
+    padding: 40px 0px 0px;
+  }
+  .maps_section_bg_3 {
+    display: none;
+  }
+  .maps_section_bg {
+    font-size: 125px;
+  }
+  .maps_section_left_content {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .maps_section_header {
+    font-size: 100px;
+    line-height: 72px;
+  }
+  .maps_section_title {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  .maps_section_content_maps_container .maps_section_btn_border {
+    margin: auto;
+  }
+  .maps_section_content_maps_container .maps_section_primary_btn {
+    padding: 5px 50px;
+  }
+  .maps_section_bg_2 {
+    display: none;
+    top: -19px;
+    width: 159%;
+  }
+  .maps_section_bg_2_image {
+    width: 160%;
+  }
+  .maps_section_bg_2_bottom {
+    display: unset;
+  }
+  .maps_section_bg_2_image_bottom {
+    margin: 25px 5px;
+    border: 8px solid var(--red);
+  }
+}
+@media (max-width: 375px) {
+  .maps_section .main_container {
+    padding: 40px 10px 0px;
+  }
+  .maps_section_header {
+    font-size: 60px;
+    line-height: 55px;
+  }
+  .maps_section_title {
+    font-size: 16px;
+    margin: 12px 0;
+  }
+  .maps_section_bg_2_image_bottom {
+    border: 4px solid var(--red);
+  }
+}

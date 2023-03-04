@@ -167,6 +167,18 @@ a:hover {
 html {
   scroll-behavior: smooth;
 }
+
+.swiper-pagination{
+  position: unset !important;
+
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: var(--red);
+}
+
 @media (max-width: 1200px) {
 }
 @media (max-width: 991px) {
